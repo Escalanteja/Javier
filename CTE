@@ -1,0 +1,10 @@
+INSERT INTO category (name) VALUES ('War'), ('Crime'), ('Mystery'), ('Romance'), ('War');
+SELECT film_id FROM film
+WHERE title = 'African Egg';
+SELECT category_id FROM film_category
+WHERE film_id = 5;
+UPDATE film_category
+SET category_id = 16
+WHERE film_id = 5;
+DELETE FROM category
+WHERE name = 'Mystery'
